@@ -16,13 +16,13 @@ import java.util.Arrays;
 public class BubbleSort {
 
     private static void bubbleSort(int[] nums) {
-        boolean hasChange = true;
-        for (int i = 0, n = nums.length; i < n - 1 && hasChange; ++i) {
-            hasChange = false;
+        //boolean hasChange = true;
+        for (int i = 0, n = nums.length; i < n - 1 ; ++i) {
+            //hasChange = false;
             for (int j = 0; j < n - i - 1; ++j) {
                 if (nums[j] > nums[j + 1]) {
                     swap(nums, j, j + 1);
-                    hasChange = true;
+                   // hasChange = true;
                 }
             }
         }
